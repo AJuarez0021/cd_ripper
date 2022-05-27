@@ -1,0 +1,348 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&Archivo"
+    BEGIN
+        MENUITEM "Salir",                       ID_FILE_EXIT
+    END
+    POPUP "&Editar"
+    BEGIN
+        MENUITEM "Seleccionar Todo",            ID_EDIT_SELECTALL
+        MENUITEM "Seleccionar Ninguno",         ID_EDIT_SELECTNONE
+    END
+    POPUP "A&ccion"
+    BEGIN
+        MENUITEM "Extraer",                     ID_ACTION_EXTRACT
+        MENUITEM "Actualizar",                  ID_ACTION_UPDATE
+        MENUITEM "Expulsar CD-ROM",             ID_ACTION_EJECT
+    END
+    POPUP "&Herramientas"
+    BEGIN
+        MENUITEM "Opciones",                    ID_TOOL_SETTINGS
+        MENUITEM "Informacion del CD",          ID_TOOL_INFCD
+        MENUITEM "Ir al directorio de salida .mp3", ID_TOOL_MP3OUTPUTFOLDER
+        MENUITEM "Ir al directorio de salida .wav", ID_TOOL_WAVOUTPUTFOLDER
+    END
+    POPUP "A&yuda"
+    BEGIN
+        MENUITEM "Acerca de",                   ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 209, 109
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Progreso"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Convertir",ID_PROGRESS_OK,55,88,50,14
+    PUSHBUTTON      "Cancelar",ID_PROGRESS_CANCEL,109,88,50,14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",0x0,16,41,
+                    173,16
+    GROUPBOX        "CD Ripper",IDC_STATIC,7,7,195,77
+    LTEXT           "Accion:",IDC_TEXT,15,18,179,10
+    LTEXT           "",IDC_STATIC_PROGRESS_TIME,14,30,117,8
+    CONTROL         "Visualizar detalles al finalizar la conversion.",
+                    IDC_CHECK_DETAILS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    31,66,147,11
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 183, 104
+STYLE WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_ABOUT_OK,126,83,50,14
+    ICON            IDI_ICON1,IDC_STATIC,29,20,20,20
+    GROUPBOX        "",IDC_STATIC,7,7,169,74
+    LTEXT           "CD Ripper",IDC_STATIC,74,15,38,10
+    LTEXT           "Version: 1.0",IDC_STATIC,72,30,42,10
+    LTEXT           "A. Juarez",IDC_STATIC,76,47,34,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "main.ico"
+IDI_ICON2               ICON    DISCARDABLE     "extract.ico"
+IDI_ICON3               ICON    DISCARDABLE     "update.ico"
+IDI_ICON4               ICON    DISCARDABLE     "settings.ico"
+IDI_ICON5               ICON    DISCARDABLE     "help.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "default1.bin"
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Modern) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANEL DIALOG DISCARDABLE  0, 17, 109, 210
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Play Panel",IDC_STATIC,7,7,95,196
+    PUSHBUTTON      "",IDC_PLAY,16,177,16,15,BS_ICON
+    PUSHBUTTON      "",IDC_STOP,31,177,16,15,BS_ICON
+    PUSHBUTTON      "",IDC_EJECT,79,177,16,15,BS_ICON
+    CONTROL         "Slider1",IDC_SLIDER_POSITION,"msctls_trackbar32",
+                    WS_TABSTOP,24,153,61,11
+    PUSHBUTTON      "",IDC_NEXT,47,177,16,15,BS_ICON
+    PUSHBUTTON      "",IDC_PREV,63,177,16,15,BS_ICON
+    LTEXT           "Numero de Track:",IDC_STATIC_TRACK,14,118,82,9
+    LTEXT           "Tiempo:",IDC_STATIC_TIME,13,129,82,9
+    CONTROL         "Slider2",IDC_SLIDER_VOL,"msctls_trackbar32",TBS_VERT | 
+                    WS_TABSTOP,30,64,11,47
+    GROUPBOX        "Volumen",IDC_STATIC,16,53,38,61
+    GROUPBOX        "Balance",IDC_STATIC,58,53,36,61
+    CONTROL         "Slider2",IDC_SLIDER_PANEO,"msctls_trackbar32",TBS_VERT | 
+                    WS_TABSTOP,71,63,11,47
+    GROUPBOX        "Posicion",IDC_STATIC,16,142,78,28
+    CONTROL         "Progress1",IDC_PROGRESS_LEVEL1,"msctls_progress32",0x0,
+                    16,20,76,9
+    CONTROL         "Progress1",IDC_PROGRESS_LEVEL2,"msctls_progress32",0x0,
+                    16,38,76,9
+END
+
+IDD_CD_INFORMATION DIALOG DISCARDABLE  0, 0, 186, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Informacion del CD"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_INF_OK,74,101,50,14
+    PUSHBUTTON      "Cancelar",ID_INF_CANCEL,129,101,50,14
+    LTEXT           "Artista:",IDC_STATIC,14,25,23,10
+    LTEXT           "Album:",IDC_STATIC,14,40,23,10
+    LTEXT           "Año:",IDC_STATIC,14,56,23,10
+    GROUPBOX        "Informacion",IDC_STATIC,7,7,172,89
+    COMBOBOX        IDC_COMBO_GENRE,52,74,82,33,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Genero:",IDC_STATIC,14,76,35,10
+    EDITTEXT        IDC_EDIT_ARTIST,47,21,114,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ALBUM,47,36,114,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YEAR,47,52,36,12,ES_AUTOHSCROLL
+    LTEXT           "Formato: YYYY",IDC_STATIC,89,54,52,10
+END
+
+IDD_LOG DIALOG DISCARDABLE  0, 0, 186, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Exportar",ID_LOG_EXPORT,75,129,50,14
+    PUSHBUTTON      "Cancelar",ID_LOG_CANCEL,129,129,50,14
+    LISTBOX         IDC_LIST_LOG,18,18,151,94,NOT LBS_NOTIFY | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Visualizando .log",IDC_STATIC,7,7,172,115
+END
+
+IDD_SETTINGS DIALOG DISCARDABLE  0, 0, 216, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Opciones de Salida"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Aplicar",ID_SETTINGS_OK,103,193,50,14
+    PUSHBUTTON      "Cancelar",ID_SETTINGS_CANCEL,159,193,50,14
+    EDITTEXT        IDC_EDIT_MP3,19,41,154,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_MP3OUTPUT_OPEN,177,43,19,14
+    GROUPBOX        "Salida",IDC_STATIC,7,130,202,58
+    GROUPBOX        "MP3",IDC_STATIC,7,7,202,57
+    COMBOBOX        IDC_COMBO_OUTPUT,50,165,116,12,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Seleccione un directorio para almacenar sus archivos .mp3",
+                    IDC_STATIC,19,20,182,17
+    LTEXT           "Se puede crear el nombre del archivo de acuerdo a la regla que se le especifique",
+                    IDC_STATIC,18,145,175,18
+    GROUPBOX        "WAV",IDC_STATIC,7,68,202,56
+    EDITTEXT        IDC_EDIT_WAV,20,103,154,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_WAVOUTPUT_OPEN,177,102,19,14
+    LTEXT           "Seleccione un directorio para almacenar sus archivos .wav",
+                    IDC_STATIC,17,82,182,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 102
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_CD_INFORMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON7               ICON    DISCARDABLE     "pause.ico"
+IDI_ICON8               ICON    DISCARDABLE     "play.ico"
+IDI_ICON9               ICON    DISCARDABLE     "stop.ico"
+IDI_ICON10              ICON    DISCARDABLE     "eject.ico"
+IDI_ICON11              ICON    DISCARDABLE     "prev.ico"
+IDI_ICON12              ICON    DISCARDABLE     "next.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR              CURSOR  DISCARDABLE     "wait.cur"
+#endif    // Spanish (Modern) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
